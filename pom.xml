@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.loljoa</groupId>
-    <artifactId>loljoa_server</artifactId>
+    <artifactId>lck_schedule_apiserver</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>loljoa_server</name>
-    <description>loljoa_server</description>
+    <description>lck_schedule_apiserver</description>
     <properties>
         <java.version>11</java.version>
     </properties>

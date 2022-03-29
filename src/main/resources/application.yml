@@ -16,7 +16,7 @@ spring:
     database: mysql
     show-sql: true
     hibernate:
-      ddl-auto: update
+      ddl-auto: none
 
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -31,10 +31,14 @@ spring:
     port: 6379
 
 management:
+  endpoint:
+    health:
+      probes:
+        enabled: true
   endpoints:
     web:
       exposure:
-        include: refresh, health, beans, httptrace, busrefresh, info, prometheus, metrics
+        include: health, prometheus, metrics
 
 jsonPath: "D:\\works\\LoLjoa"
 
@@ -69,3 +73,13 @@ spring:
   redis:
     host: localhost
     port: 6379
+
+management:
+  endpoint:
+    health:
+      probes:
+        enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: refresh, health, beans, httptrace, busrefresh, info, prometheus, metrics
